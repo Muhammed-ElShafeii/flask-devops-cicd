@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
-        IMAGE_NAME = "muhammedelshafei/flask-devops-app"
+        IMAGE_NAME = "elshafeii/flask-devops-app"
         IMAGE_TAG = "latest"
     }
 

@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   flask-app:
-    image: muhammedelshafei/flask-devops-app:latest
+    image: elshafeii/flask-devops-app:latest
     ports:
       - "5000:5000"
     restart: always
