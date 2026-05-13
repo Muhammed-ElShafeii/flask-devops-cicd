@@ -24,11 +24,11 @@ pipeline {
         }
 
         stage('Test') {
-            steps {
+             steps {
                 echo '🧪 Running tests...'
                 sh '''
                 pip install -r requirements.txt --break-system-packages
-                pytest test_app.py -v
+                /var/lib/jenkins/.local/bin/pytest test_app.py -v
                 '''
             }
         }
