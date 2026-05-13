@@ -27,8 +27,8 @@ pipeline {
             steps {
                 echo '🧪 Running tests...'
                 sh '''
-                    pip install -r requirements.txt
-                    pytest test_app.py -v
+                pip install -r requirements.txt --break-system-packages
+                pytest test_app.py -v
                 '''
             }
         }
